@@ -4,11 +4,7 @@ import { Card, Container, Row, Button,Badge,Col} from 'react-bootstrap';
 import Spiner from './Spiner';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
-
-
-
 const News = (props) => {
-
   const [articles, setArticles] = useState([])
     const [loading, setLoading] = useState(true)
     const [page, setPage] = useState(1)
@@ -36,7 +32,6 @@ const updateNews = async () => {
         setTotalResults(parsedData.totalResults)
         setLoading(false)
         props.setProgress(100);
-
 }
 
 // const handlePrevClick = async () => {
